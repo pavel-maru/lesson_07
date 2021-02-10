@@ -7,11 +7,11 @@
 # ● постарайтесь сделать алгоритм умнее, но помните, что у вас должна остаться сортировка пузырьком.
 # Улучшенные версии сортировки, например, расчёской, шейкерная и другие в зачёт не идут.
 
-from random import randint
+from random import randrange
 
 def sort_arr(array):
      array = array.copy()
-
+     # print(len(array))
      for n in range(1, len(array)):
           for i in range(len(array) - n):
                if array[i] < array[i+1]:
@@ -19,10 +19,10 @@ def sort_arr(array):
 
      return (array)
 
-SIZE = 30
+SIZE = 10
 MIN_ITEM = -100
 MAX_ITEM = 100
-array = [randint(MIN_ITEM, MAX_ITEM) for _ in range(SIZE)]
+array = [randrange(MIN_ITEM, MAX_ITEM) for _ in range(SIZE)]
 
 print(array)
 print(sort_arr(array))
