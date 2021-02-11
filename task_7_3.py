@@ -35,4 +35,4 @@ for item in array:
         break
 
 # print(num)
-print(item)
+print(f'\nмедиана в данном массиве: {item}')
