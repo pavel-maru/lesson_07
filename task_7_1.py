@@ -14,9 +14,9 @@ def sort_arr(array):
      # print(len(array))
      for n in range(1, len(array)):
           for i in range(len(array) - n):
-               if array[i] < array[i+1]:
-                    array[i], array[i+1] = array[i+1], array[i]
-
+               if array[i] < array[i + 1]:
+                    array[i], array[i + 1] = array[i + 1], array[i]
+                    # print(array)
      return (array)
 
 SIZE = 10
